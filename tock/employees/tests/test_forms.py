@@ -1,10 +1,10 @@
+"""Run tests to ensure forms are working correctly."""
 import datetime
-
 from django.test import TestCase
 from employees.forms import UserForm
 
-
 class UserFormTests(TestCase):
+""" User form tests. """
     fixtures = ['tock/fixtures/dev_user.json']
 
     def test_user_update(self):
